@@ -1,0 +1,35 @@
+{
+  "name": "ts-node-vitest-boilerplate",
+  "version": "0.0.1",
+  "description": "Sample code",
+  "main": "main.ts",
+  "type": "module",
+  "scripts": {
+    "docs": "typedoc framefusion.ts",
+    "tsc": "tsc",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "test": "vitest",
+    "test-ui": "vitest --ui",
+    "vite-node": "vite-node",
+    "main": " npm run build && node dist/main.es.js",
+    "main:debug": " npm run build && node --enable-source-maps --inspect-brk dist/main.es.js"
+  },
+  "dependencies": {
+    "@pixi/node": "^7.2.0",
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "gl": "^6.0.2",
+    "jsdom": "^21.1.1",
+    "tsconfig-paths": "^4.1.2",
+    "typedoc": "^0.24.1",
+    "vite-node": "^0.29.2",
+    "vitest": "^0.29.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.6",
+    "@vitest/ui": "^0.29.8",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.0"
+  }
+}
